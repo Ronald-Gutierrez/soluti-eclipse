@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Donde la ciencia y la belleza se unen", "Encontramos respuestas en la oscuridad de un eclipse", "Cuando el sol y la luna se encuentran, la magia del eclipse se desvela" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,10 +55,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">Bienvenidos a SOLUTI</span>
+                <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate=' [ "Donde la ciencia y la belleza se unen", "Encontramos respuestas en la oscuridad de un eclipse", "Cuando el sol y la luna se encuentran, la magia del eclipse se desvela" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>¡Explora la maravilla de los eclipses como nunca antes! Nuestra página web te sumerge en el fascinante mundo de estos fenómenos celestiales, ofreciendo una experiencia educativa única. Además, desafía tus conocimientos con nuestro emocionante motor de videojuego diseñado para llevar tu comprensión de los eclipses a nuevas alturas. Descubre, aprende y juega mientras te adentras en el asombroso universo de los eclipses</p>
+                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
           </Col>
