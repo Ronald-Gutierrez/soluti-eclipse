@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
+import lunaBanner from "../assets/img/lunaBanner.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Canvas } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
+import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
+
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -63,15 +69,45 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
+          <TrackVisibility>
+              <Canvas
+                dpr={[1, 2]}
+                shadows
+                camera={{
+                  fov: 45,
+                  aspect: 1,
+                  near: 0.01,
+                  far: 1000,
+                  position: [0, 0, 5],
+                  alpha: true,
+                }}
+                style={{ width: "500px", height: "500px" }}
+              >
+                <PresentationControls speed={1.5} polar={[-0.1, Math.PI / 4]}>
+                  <Stage environment={"sunset"}>
+                    <Model  rotation={[0, Math.PI / 5, 0]} />
+                  </Stage>
+                </PresentationControls>
+              </Canvas>
             </TrackVisibility>
+
           </Col>
         </Row>
       </Container>
     </section>
   )
+}
+function Model(props) {
+  const { scene } = useGLTF("/moon1.glb");
+
+  // Aumenta la velocidad de rotación (por ejemplo, 0.05 radianes por fotograma)
+  const rotationSpeed = 0.05;  // Ajusta este valor según tu preferencia
+
+  // Actualiza la rotación en cada fotograma
+  useFrame(({ clock }) => {
+    const elapsedTime = clock.getElapsedTime();
+    scene.rotation.y = elapsedTime * rotationSpeed;
+  });
+
+  return <primitive object={scene} {...props} />;
 }

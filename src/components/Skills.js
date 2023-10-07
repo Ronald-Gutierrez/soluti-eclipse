@@ -6,6 +6,11 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import TrackVisibility from 'react-on-screen';
+import { Canvas } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
+import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
+
 
 export const Skills = () => {
   const responsive = {
@@ -61,4 +66,19 @@ export const Skills = () => {
         <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
+}
+
+function Model(props) {
+  const { scene } = useGLTF("/moon1.glb");
+
+  // Aumenta la velocidad de rotación (por ejemplo, 0.05 radianes por fotograma)
+  const rotationSpeed = 0.05;  // Ajusta este valor según tu preferencia
+
+  // Actualiza la rotación en cada fotograma
+  useFrame(({ clock }) => {
+    const elapsedTime = clock.getElapsedTime();
+    scene.rotation.y = elapsedTime * rotationSpeed;
+  });
+
+  return <primitive object={scene} {...props} />;
 }
