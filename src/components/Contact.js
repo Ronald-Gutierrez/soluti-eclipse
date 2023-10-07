@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import headerImg from "../assets/img/header-img.svg";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -48,10 +49,11 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <TrackVisibility>
+          <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
-              }
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={headerImg} alt="Header Img"/>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
