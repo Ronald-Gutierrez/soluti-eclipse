@@ -1,26 +1,19 @@
 # SOLUTI - ECLIPSES LUNARES
 
-In the /soluti, you can run:
+En /soluti-eclipse, puedes ejecutar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ejecuta la aplicación en modo de desarrollo.\
+Abre [http://localhost:3000](http://localhost:3000) para verla en tu navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La página se recargará automáticamente cuando realices cambios.\
+También podrás ver cualquier error de lint en la consola.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Descripción Breve del Proyecto:**
 
-### `npm run build`
+SOLUTI - ECLIPSES LUNARES es una página web educativa desarrollada con React que te sumerge en el fascinante mundo de los eclipses lunares. Explora la ciencia detrás de estos fenómenos celestiales y desvela sus secretos mientras te adentras en un viaje de conocimiento astronómico.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
