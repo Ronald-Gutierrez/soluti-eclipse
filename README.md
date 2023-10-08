@@ -10,6 +10,15 @@ Bienvenido a SOLUTI, una aplicación que proporciona información sobre los ecli
 ## Instalación
 
 Antes de comenzar, asegúrate de tener Node.js y npm (el administrador de paquetes de Node.js) instalados en tu sistema. Luego, sigue estos pasos para configurar el proyecto:
+Este proyecto utiliza las siguientes bibliotecas y tecnologías:
+
+- [React](https://reactjs.org/) - Biblioteca JavaScript para construir interfaces de usuario.
+- [Node.js](https://nodejs.org/) - Entorno de tiempo de ejecución de JavaScript del lado del servidor.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Lenguaje de marcado para la estructura de la página web.
+- [JavaScript (JS)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Lenguaje de programación para la lógica de la aplicación.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Lenguaje de estilos para el diseño de la aplicación.
+- [APIs](https://developer.mozilla.org/en-US/docs/Web/API) - Interfaz de programación de aplicaciones para integrar datos y funcionalidades.
+- [Godot](https://godotengine.org/) - Motor de videojuegos de código abierto.
 
 1. Clona este repositorio a tu máquina local:
    ```bash
@@ -72,11 +81,13 @@ John Edson Sanchez Chilo
     <img src="https://avatars.githubusercontent.com/u/84652181?v=4" width="50px">
 </a>
 Roy Angel Choquehuanca Anconeyra
-
+<br>
+<br>
 <a href="">
     <img src="" width="50px">
 </a>
 Nelly Milagros Ccuno Huillca
+<br>
 <br>
 ¡Agradecemos contribuciones! Si deseas contribuir a este proyecto, puedes abrir problemas (issues) o enviar solicitudes de extracción (pull requests) en el repositorio de GitHub.
 
