@@ -25,7 +25,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
       <Col lg={12}>
         <div className="newsletter-bx wow slideInUp">
           <Row>
-            <h4>Descubre el universo de los eclipses: donde la ciencia se fusiona con el asombro, y el conocimiento ilumina el camino hacia la maravilla celestial.</h4>
+            <h4> Use certified eclipse glasses with ISO 12312-2 standard to protect your eyes while viewing solar or lunar eclipses. Avoid regular sunglasses or homemade lenses. Ensuring eye safety is essential during eclipse observation</h4>
           </Row>
         </div>
       </Col>

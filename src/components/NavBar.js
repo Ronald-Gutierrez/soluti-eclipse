@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import logoSoluti from '../assets/img/logoSoluti.png';
-
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -47,19 +46,16 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Principal</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Earth')}>¿Cuándo y dónde se dan?</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Más sobre eclipses</Nav.Link>
-              <Nav.Link href="#game" className={activeLink === 'game' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('game')}>Interactua</Nav.Link>
+              <Nav.Link  href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Main</Nav.Link>
+              <Nav.Link  href="#whatis" className={activeLink === 'whatis' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('whatis')}>What is?</Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>More about eclipses</Nav.Link>
+              <Nav.Link href="#game" className={activeLink === 'game' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('game')}>Game</Nav.Link>
+              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Earth')}>When and where do they occur?</Nav.Link>
             </Nav>
             <span className="navbar-text">
-              <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
-              </div>
+
               <HashLink to='#connect'>
-                <button className="vvd"><span>Contactanos</span></button>
+                <button className="vvd"><span>Contact</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
