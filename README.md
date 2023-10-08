@@ -1,22 +1,23 @@
-# SOLUTI - Información sobre Eclipses
+<p align="center">
+  <img src="https://github.com/Ronald-Gutierrez/soluti-eclipse/blob/main/src/assets/img/logoSoluti.png" alt="Logo_BusGo">
+   <h2>SOLUTI</h2>
+</p>
 
-Bienvenido a SOLUTI, una página web que proporciona información sobre los eclipses, cuándo ocurren, cómo se producen y una breve descripción de los diferentes tipos de eclipses. Este proyecto está construido utilizando tecnologías como React, Node.js, Html, Js, CSS, APIs, Godot (motor de videojuegos).
+
+
+Bienvenido a SOLUTI, una aplicación que proporciona información sobre los eclipses, cuándo ocurren, cómo se producen y una breve descripción de los diferentes tipos de eclipses. Este proyecto está construido utilizando tecnologías como React, Node.js, Html, Js, CSS, APIs, Godot (motor de videojuegos).
 
 ## Instalación
 
 Antes de comenzar, asegúrate de tener Node.js y npm (el administrador de paquetes de Node.js) instalados en tu sistema. Luego, sigue estos pasos para configurar el proyecto:
 
 1. Clona este repositorio a tu máquina local:
-
    ```bash
-  https://github.com/Ronald-Gutierrez/soluti-eclipse.git
-   ```
-
+   https://github.com/Ronald-Gutierrez/soluti-eclipse.git
 2. Navega al directorio del proyecto:
 
    ```bash
    cd soluti-eclipses
-   ```
 
 3. Instala las dependencias necesarias usando npm:
 
