@@ -14,6 +14,39 @@
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
+.eclipse-text {
+  margin-top: 100px;
+  margin-left: 100px;
+  position: absolute;
+  font-family: "Roboto", sans-serif; /* Cambiar a una fuente robótica o similar */
+  font-size: 18px; /* Ajustar el tamaño de fuente según tus preferencias */
+  color: #ffffff; /* Cambiar a blanco */
+  letter-spacing: 2px; /* Aumentar el espaciado entre letras */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ffffff; /* Simula el cursor de escritura en blanco */
+  animation: typing 1s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
+}
+
 
 /************ Default Css ************/
 * {
