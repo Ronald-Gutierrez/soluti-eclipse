@@ -10,7 +10,7 @@ import TrackVisibility from 'react-on-screen';
 import { Canvas } from "@react-three/fiber";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
-
+import loading from '../assets/img/loading.png';
 
 
 export const Game = () => {
@@ -34,33 +34,18 @@ export const Game = () => {
     }
   };
 
+  const imageStyle = {
+    width: '50%', // Ajusta el ancho de la imagen según tus preferencias
+  };
+
   return (
     <section className="game" id="game">
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                      <h4>VIDEOJUEGO</h4>
-                      <Canvas
-                        dpr={[1, 2]}
-                        shadows
-                        camera={{
-                          fov: 45,
-                          aspect: 1,
-                          near: 0.01,
-                          far: 1000,
-                          position: [0, 0, 5],
-                          alpha: true,
-                        }}
-                        style={{ width: "500px", height: "500px" }}
-                      >
-                        <PresentationControls speed={1.5} polar={[-0.1, Math.PI / 4]}>
-                          <Stage environment={"sunset"}>
-                            <Model rotation={[0, Math.PI / 5, 0]} position={[0, 0, 0]} /> 
-                          </Stage>
-                        </PresentationControls>
-                      </Canvas>
-
+                      <h4>Videogame</h4>
+                      <img src={loading} alt="loading" style={imageStyle} /> {/* Aplica el estilo a la imagen */}
                     </div>
                 </div>
             </div>

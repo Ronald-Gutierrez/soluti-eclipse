@@ -17,7 +17,10 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Donde la ciencia y la belleza se unen", "Encontramos respuestas en la oscuridad de un eclipse", "Cuando el sol y la luna se encuentran, la magia del eclipse se desvela" ];
+  const toRotate = [
+    "Become an eclipse hunter!"
+  ];
+  
   const period = 2000;
 
   useEffect(() => {
@@ -61,9 +64,12 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Bienvenidos a SOLUTI</span>
+                <span className="tagline">Welcome to SOLUTI</span>
                 <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate=' [ "Donde la ciencia y la belleza se unen", "Encontramos respuestas en la oscuridad de un eclipse", "Cuando el sol y la luna se encuentran, la magia del eclipse se desvela" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>¡Explora la maravilla de los eclipses como nunca antes! Nuestra página web te sumerge en el fascinante mundo de estos fenómenos celestiales, ofreciendo una experiencia educativa única. Además, desafía tus conocimientos con nuestro emocionante motor de videojuego diseñado para llevar tu comprensión de los eclipses a nuevas alturas. Descubre, aprende y juega mientras te adentras en el asombroso universo de los eclipses</p>
+                  <p>Through Soluti's interactive game you can learn what an eclipse is, when and how it occurs, in addition to knowing how to differentiate them.
+
+                  <br></br>
+                  <br></br>But that's not all, we know that one does not learn only with theory, but by putting it into practice. That is why we also have a challenge for you, hunt the greatest number of eclipses and become a professional hunter!</p>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
