@@ -1,6 +1,3 @@
-Claro, aquí te proporciono un ejemplo de un archivo `README.md` para tu proyecto "SOLUTI" que trata sobre eclipses y utiliza React, Node.js, así como las bibliotecas `@react-three/fiber` y `@react-three/drei`. Puedes personalizarlo según las necesidades específicas de tu proyecto:
-
-```markdown
 # SOLUTI - Información sobre Eclipses
 
 Bienvenido a SOLUTI, una página web que proporciona información sobre los eclipses, cuándo ocurren, cómo se producen y una breve descripción de los diferentes tipos de eclipses. Este proyecto está construido utilizando tecnologías como React, Node.js, Html, Js, CSS, APIs, Godot (motor de videojuegos).
