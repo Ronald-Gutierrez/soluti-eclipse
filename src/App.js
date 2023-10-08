@@ -18,8 +18,6 @@ function App() {
       <NavBar />
       <Banner />
       <Earth />
-      <Skills />
-      <Projects />
       <Questions />
       <Game />
       <Contact />

@@ -71,7 +71,7 @@ class Earth extends Component {
   }
 
   render() {
-    return <div className="earth-container" ref={(ref) => (this.mount = ref)} />;
+    return <div className="earth-container" ref={(ref) => (this.mount = ref)}> </div>;
   }
 }
 
