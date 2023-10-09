@@ -8,7 +8,7 @@
 Bienvenido a SOLUTI, una aplicación que proporciona información sobre los eclipses, cuándo ocurren, cómo se producen y una breve descripción de los diferentes tipos de eclipses. Este proyecto está construido utilizando tecnologías como React, Node.js, Html, Js, CSS, APIs, Godot (motor de videojuegos).  
 Puedes encontrar un video de la demostración en:
 https://www.youtube.com/watch?v=qlUmM7AS8k0  
-Si no puedes correr el juego en nuestro servidor, puedes ecnontrar el juego en el siguiente enlace:
+Si no puedes correr el juego en nuestro servidor, puedes encontrar un prototipo del juego en el siguiente enlace:
 https://john-sc.itch.io/eclipses-hunter
 ## Instalación
 
